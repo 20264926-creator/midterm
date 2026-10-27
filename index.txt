@@ -1,0 +1,238 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio - Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8f3dc; /* Mint Green Background */
+            color: #333333;
+        }
+
+        /* Stacked Header Layout */
+        header {
+            background-color: #3a3a3a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Brand Logo Section at Top */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 0;
+        }
+
+        .brand-container img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .brand-container span {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1.5px;
+        }
+
+        /* Navigation Bar underneath */
+        nav {
+            width: 100%;
+            background-color: #2b2b2b;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #4a4a4a;
+        }
+
+        nav a {
+            color: #b0b0b0;
+            text-decoration: none;
+            padding: 14px 30px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Active State for GALLERY */
+        nav a.active {
+            color: #ffffff;
+            background-color: #444444;
+            border-bottom: 3px solid #ffb7b2;
+        }
+
+        /* Main Content Card Box */
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffff; /* White Card Background */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .container p.subtitle {
+            font-size: 0.95rem;
+            color: #666666;
+            margin-bottom: 35px;
+        }
+
+        /* 4-Column Grid for 12 Circular Projects */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px 20px;
+            justify-items: center;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Circular Image with Border */
+        .gallery-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d4af37;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Project Title under images */
+        .gallery-item span {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: #333333;
+        }
+
+        /* Reflection Section Styling */
+        .reflection-container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+
+        .reflection-container h2 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .reflection-container p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #444444;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo and Stacked Navigation -->
+    <header>
+        <div class="brand-container">
+            <img src="logo.png" alt="Logo">
+            <span>MIKAELLA'S CREATIVES</span>
+        </div>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+             <a href="services.html">SERVICES</a>
+            <a href="index.html" class="active">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Main Card Container -->
+    <div class="container">
+        <h1>Creative Portfolio</h1>
+        <p class="subtitle">A curated look at our latest collections and artistic ventures.</p>
+
+        <!-- 12 Items Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="profile1.jpg" alt="Project 01">
+                <span>PROJECT 01</span>
+            </div>
+            <div class="gallery-item">
+                <img src="profile2.jpg" alt="Project 02">
+                <span>PROJECT 02</span>
+            </div>
+            <div class="gallery-item">
+                <img src="profile3.jpg" alt="Project 03">
+                <span>PROJECT 03</span>
+            </div>
+            <div class="gallery-item">
+                <img src="profile4.jpg" alt="Project 04">
+                <span>PROJECT 04</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="profile5.jpg" alt="Project 05">
+                <span>PROJECT 05</span>
+           
+
+                button class="btn" onclick="switchtab(null, 'home')" BACK TO HOME</button>
+            </section>
+
+                <section id="contact" class="view-section">
+                    <h1>Contact us</h1>
+                    <p class="tagline"> We would like to connect with you.</p<p>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: 09611793940</p>
+        <p>&copy; 2026 Bacala's Creatives</p>
+    </footer>
+
+</body>
+</html>
