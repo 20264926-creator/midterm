@@ -96,6 +96,14 @@
             margin-bottom: 35px;
         }
 
+        /* 4-Column Grid for 12 Circular Projects */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px 20px;
+            justify-items: center;
+        }
+
         .gallery-item {
             display: flex;
             flex-direction: column;
@@ -160,65 +168,53 @@
     <!-- Header with Logo and Stacked Navigation -->
     <header>
         <div class="brand-container">
+            <img src="logo.png" alt="Logo">
             <span>Mikaella's Midterm Portfolio</span>
         </div>
         <nav>
-            <a href="home.html"class="active">HOME</a>
-            <a href="about.html"class="active">ABOUT</a>
-             <a href="services.html"class="active">SERVICES</a>
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+             <a href="services.html">SERVICES</a>
             <a href="index.html" class="active">GALLERY</a>
-            <a href="contact.html"class="active">CONTACT</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
     </header>
 
+    <!-- Main Card Container -->
+    <div class="container">
+        <h1>Creative Portfolio</h1>
+        <p class="subtitle">A curated look at our latest collections and artistic ventures.</p>
+
         <!-- 12 Items Grid -->
-        <div class="gallery">
-            <div class="gallery-Home">
-                <img src="profile1.jpg" alt="Home 01">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="profile1.jpg" alt="Project 01">
                 <span>PROJECT 01</span>
             </div>
-            <div class="gallery-About">
-                <img src="profile2.jpg" alt="About 02">
-                
+            <div class="gallery-item">
+                <img src="profile2.jpg" alt="Project 02">
+                <span>PROJECT 02</span>
             </div>
-            <div class="gallery-Services">
-                <img src="profile3.jpg" alt="Services 03">
+            <div class="gallery-item">
+                <img src="profile3.jpg" alt="Project 03">
                 <span>PROJECT 03</span>
             </div>
-            <div class="gallery-Media">
-                <img src="profile4.jpg" alt="Media 04">
+            <div class="gallery-item">
+                <img src="profile4.jpg" alt="Project 04">
                 <span>PROJECT 04</span>
             </div>
 
             <div class="gallery-item">
-                <img src="profile5.jpg" alt="Contact 05">
+                <img src="profile5.jpg" alt="Project 05">
                 <span>PROJECT 05</span>
            
 
                 button class="btn" onclick="switchtab(null, 'home')" BACK TO HOME</button>
             </section>
-                  <section id="home" class="view-section">
-                    <h1>Welcome Home</h1>
-                    <p class="tagline"> Welcome to my laboratory project. This site is built using separate HTML pages to display distinct views clearly. By utilizing semantic HTML tags and custom CSS layout properties, information is presented in a balanced and accessible structure.</p<p>
 
-                        <section id="About" class="view-section">
-                    <h1>About Me</h1>
-                  <p class="tagline"> My name is Mikaella, and I am an IT student dedicated to mastering fromt-end  web development principles. Below are my core focus 
-                      : Semantic HTML Structuring: Writing clean and accessible markups.
-                      : CSS Layout Optimization: Building centered layouts without frameworks.
-
-                           <section id="Services" class="view-section">
-                    <h1>My Services</h1>
-                  <p class="tagline">
-
-                       <section id="Media" class="view-section">
-                    <h1>Media Showcase</h1>
-                  <p class="tagline">
-                      
-
-                  <section id="contact" class="view-section">
+                <section id="contact" class="view-section">
                     <h1>Contact us</h1>
-                    <p class="tagline"> Contact Form/Full Name/Email Address/Inquiry Topic/Message.</p<p>
+                    <p class="tagline"> We would like to connect with you.</p<p>
                     
 
             </div>
@@ -228,7 +224,7 @@
     <!-- Footer -->
     <footer>
         <p>Contact: 09611793940</p>
-        <p>&copy; 2026 Bacala's Creatives</p>
+        <p>&copy;Develop by Mikaella/ HUMAN COMPUTER INTERACTION</p>
     </footer>
 
 </body>
